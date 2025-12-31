@@ -93,7 +93,7 @@ const App: React.FC = () => {
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-700 ease-out scale-110 pointer-events-none"
         style={{ 
-          backgroundImage: 'url("/background.jpg")',
+          backgroundImage: `url("${new URL('background.jpg', import.meta.env.BASE_URL).toString()}")`,
           transform: `translate(${mousePos.x}px, ${mousePos.y}px) scale(1.1)`
         }}
       >
