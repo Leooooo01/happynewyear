@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 跨年盛典</title>
+    
+    <link rel="stylesheet" href="https://fonts.font.im/css2?family=ZCOOL+KuaiLe&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lxgw/LxgwWenKai@v1.310/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #020617;
+            font-family: 'ZCOOL KuaiLe', cursive;
+            color: white;
+        }
+        .font-cute {
+            font-family: 'ZCOOL KuaiLe', 'LXGW WenKai', cursive, system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        @keyframes sway {
+            0%, 100% { transform: rotate(-5deg); transform-origin: top center; }
+            50% { transform: rotate(5deg); transform-origin: top center; }
+        }
+        .animate-sway {
+            animation: sway 3s ease-in-out infinite;
+        }
+        .bg-overlay {
+            background: linear-gradient(to bottom, rgba(2, 6, 23, 0.4), rgba(2, 6, 23, 0.7));
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
